@@ -16,7 +16,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <div  >
+        <header className=" ">
+          <nav className="flex justify-between ">
+            <div className="">
+              {/* <img src="https://st2.depositphotos.com/4035913/6124/i/380/depositphotos_61243733-stock-illustration-business-company-logo.jpg" alt="" /> */}
+            </div>
+            <ul className="flex gap-6 ">
+              <li>home</li>
+              <li className="">about</li>
+              <li>contact</li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+        {children}
+        </body>
     </html>
   );
 }
